@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>State:</strong>
+  <%= @parking.state %>
+</p>
+
+
+
+<p>
+  <strong>Date start:</strong>
+  <%= @parking.date_start %>
+</p>
+
+<p>
+  <strong>Date end:</strong>
+  <%= @parking.date_end %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @parking.description %>
+</p>
+
+<p>
+  <strong>Type rent:</strong>
+  <%= @parking.type_rent %>
+</p>
+
+<p>
+  <strong>Name favorite:</strong>
+  <%= @parking.name_favorite %>
+</p>
+
+<p>
+  <strong>State favorite:</strong>
+  <%= @parking.state_favorite %>
+</p>
+  <div class="field">
+    <%= image_tag @parking.cover.url(:thumb) %>
+  </div>
+<%= link_to 'Edit', edit_parking_path(@parking) %> |
+<%= link_to 'Back', parkings_path %>

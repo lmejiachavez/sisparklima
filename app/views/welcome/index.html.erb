@@ -1,0 +1,34 @@
+
+<%= form_tag({:controller => "welcome"}, :method => "get") do %>
+	<p>
+		<%= text_field_tag :search, params[:search]%>
+		<%= submit_tag "Buscar", :name=> nil %>
+	</p>
+<% end %>
+
+
+
+<table class="table table-hover">
+ <thead>
+     <th>Dirección</th>
+     <th>Estado</th>
+     <th>Fecha Inicio</th>
+     <th>Fecha Fin</th>
+     <th>Tipo de renta</th>
+ </thead>
+<tbody>
+  <!-- Aplicadas en las celdas (<td> o <th>) -->
+  <% for parking in @parkings %>
+  <tr>
+      
+    	
+    <td ><%= link_to parking.description, parking%></td>
+    <td ><%=  parking.state%></td>
+    <td ><%=  parking.date_start%></td>
+    <td ><%= link_to parking.date_end, parking%></td>
+    <td ><%= link_to parking.type_rent, parking%></td>
+     
+  </tr>
+  <% end %>
+</tbody>
+</table>

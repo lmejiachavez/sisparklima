@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SISPARK</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="wrapper">
+    	<header>
+        <%= render 'layouts/header' %>
+      </header>
+        
+
+      <section id="featured">
+       
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+
+        <%= yield %>
+      </section>
+      
+  
+    	<section id="content">
+    
+      	</section>
+      
+      <footer>
+        <%= render 'layouts/footer' %>
+      </footer>
+  </div>    
+      
+  
+
+
+
+</body>
+</html>

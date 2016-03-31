@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date current:</strong>
+  <%= @reservation.date_current %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @reservation.cost %>
+</p>
+
+<p>
+  <strong>Number confirmation:</strong>
+  <%= @reservation.number_confirmation %>
+</p>
+
+<%= link_to 'Edit', edit_reservation_path(@reservation) %> |
+<%= link_to 'Back', reservations_path %>

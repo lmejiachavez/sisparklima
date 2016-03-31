@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  state: MyString
+  hour_start: 2016-03-27 18:40:12
+  hour_end: 2016-03-27 18:40:12
+  date_start: 2016-03-27 18:40:12
+  date_end: 2016-03-27 18:40:12
+  description: MyString
+  type_rent: MyString
+  name_favorite: MyString
+  state_favorite: MyString
+
+two:
+  state: MyString
+  hour_start: 2016-03-27 18:40:12
+  hour_end: 2016-03-27 18:40:12
+  date_start: 2016-03-27 18:40:12
+  date_end: 2016-03-27 18:40:12
+  description: MyString
+  type_rent: MyString
+  name_favorite: MyString
+  state_favorite: MyString

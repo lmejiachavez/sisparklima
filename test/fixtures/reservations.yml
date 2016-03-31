@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_current: 2016-03-28 21:30:58
+  cost: 
+  number_confirmation: 1
+
+two:
+  date_current: 2016-03-28 21:30:58
+  cost: 
+  number_confirmation: 1

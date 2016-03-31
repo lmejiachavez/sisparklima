@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+
+
+
+
+
+
+
+
+<h1>Listing Parkings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>State</th>
+      <th>Date start</th>
+      <th>Date end</th>
+      <th>Description</th>
+      <th>Type rent</th>
+      <th>Name favorite</th>
+      <th>State favorite</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @parkings.each do |parking| %>
+      <tr>
+        <td><%= parking.state %></td>
+        <td><%= parking.date_start %></td>
+        <td><%= parking.date_end %></td>
+        <td><%= parking.description %></td>
+        <td><%= parking.type_rent %></td>
+        <td><%= parking.name_favorite %></td>
+        <td><%= parking.state_favorite %></td>
+        <td><%= link_to 'Show', parking %></td>
+        <td><%= link_to 'Edit', edit_parking_path(parking) %></td>
+        <td><%= link_to 'Destroy', parking, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Parking', new_parking_path %>
